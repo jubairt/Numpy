@@ -1,3 +1,4 @@
+
 import numpy as np
 
 # Mean
@@ -61,3 +62,52 @@ print("Population Variance:", population_variance)
 
 print("Sample Variance:", sample_variance)
 # Output: Sample Variance: 22.125
+
+
+# =====================================================================
+
+# LCM and HCF
+import numpy as np
+
+num1=3
+num2=12
+
+
+#  this will give lcm(least common multiple of two numbers)
+# It means that both two number's least multiple that multiplication result should be included in both numbers
+lcm=np.lcm(num1,num2)
+print(lcm)
+
+
+# GCD(greatest common divisor)=HCF(Heighest common factor) , it is the heighest factor or divisor included in both numbers
+
+hiehest_factor=np.gcd(num1,num2)
+print(hiehest_factor)
+
+# =================================================================
+
+# Log operation
+
+n=np.array([1,2,34,5,6,76])
+
+
+# This will give all the log2 values (log 2 base)
+logged=np.log2(n)
+print(logged)
+
+# This will give all the log10 values (log 10 base)
+logged=np.log10(n)
+print(logged)
+
+# ==============================================================
+
+# Removing common elements
+
+n1=np.array([1,2,70,7])
+n2=np.array([70,4,5,7])
+
+# setdiff will remove common elements from both arrays and display the rest of the elements from the first array
+differenced=np.setdiff1d(n1,n2)
+print(differenced)
+
+# ==============================================================
